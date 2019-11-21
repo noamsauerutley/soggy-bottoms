@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  font-family: 'Marck Script', cursive;
+  background-color: thistle;
 }
 
 #App {
@@ -18,6 +20,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: image("/public/sprinkles.jpg");
+  background-size: cover;
+  background-repeat: repeat;
 }
 
 .CakeDisplay img {
@@ -34,37 +39,74 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-flex-start;
-  background-color: gray;
+  background-color: cornflowerblue;
+}
+
+.CakeFilter {
+  background-color: thistle;
 }
 
 .CakeFilter select {
+  font-family: 'Marck Script', cursive;
   width: 100%;
   height: 5vh;
+  color: crimson;
+  font-size: 1.2em;
+  background: repeating-linear-gradient(
+   45deg,
+   transparent,
+   transparent 10px,
+   lavender 10px,
+   lavender 20px
+ )
 }
 
 .CakeItem {
   font-size: 3vh;
-  margin-top: 2vh;
-  background-color: #f7d559;
+  margin-top: 4vh;
+  padding-top: 4vh;
+  background-color: pink;
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
   height: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Marck Script', cursive;
 }
 
 .CakeBottomBun {
-  background-color: #f7d559;
+  background-color: lavender;
   height: 5vh;
-  border-top: 4vh solid #6b1c00;
+  border-top: 4vh solid pink;
   display: flex;
   align-content:space-around;
   align-items: center;
   justify-content: center;
+  align-items: center;
+  background: repeating-linear-gradient(
+   45deg,
+   transparent,
+   transparent 10px,
+   lavender 10px,
+   lavender 20px
+ )
 }
 
 .CakeBottomBun button {
   margin: 2vw;
   width: 7vw;
+  padding: .5vh;
+  background-color: crimson;
+  border-radius: 10em;
+  color: thistle;
+}
+
+.CakeBottomBun button:hover {
+  background-color: cornflowerblue;
+  color: crimson;
+}
+
+.CakeBottomBun {
+  background-color: thistle;
 }

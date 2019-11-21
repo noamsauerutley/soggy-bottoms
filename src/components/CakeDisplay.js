@@ -7,10 +7,12 @@ const CakeDisplay = (props) => {
       <br/>
       <h1>Insert Cake Name Here</h1>
       <br/>
-      <select onChange={console.log}>
-        <option value="Soggy Bottomed">Soggy Bottomed</option>
-        <option value="Firm Bottomed">Firm Bottomed</option>
-      </select>
+      <div className="CakeFilter">
+        <select onChange={console.log}>
+          <option value="Soggy Bottomed">Soggy Bottomed</option>
+          <option value="Firm Bottomed">Firm Bottomed</option>
+        </select>
+      </div>
     </div>
   )
 }
