@@ -1,0 +1,70 @@
+{
+  "cakes": [
+    {
+      "id": 1,
+      "name": "The Shovler",
+      "category": "Firm Bottomed",
+      "imgURL": "https://www.tasteofhome.com/wp-content/uploads/2018/04/5052775f.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Soggy Bees",
+      "category": "Soggy Bottomed",
+      "imgURL": "https://pbs.twimg.com/media/DM7RxQzWsAU_Xo5?format=jpg&name=4096x4096"
+    },
+    {
+      "id": 3,
+      "name": "Autumn Wonder",
+      "category": "Firm Bottomed",
+      "imgURL": "https://s1.r29static.com/bin/entry/749/x,80/1655113/image.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Brexit Boris",
+      "category": "Soggy Bottomed",
+      "imgURL": "https://i.pinimg.com/originals/fa/c3/79/fac379e5f1aefa90fabeaa97693279b2.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Elephondant",
+      "category": "Firm Bottomed",
+      "imgURL": "http://www.swlondoner.co.uk/wp-content/uploads/2015/04/Cakes-by-Robin-FEATURED-978x627.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Norwegian Black Death",
+      "category": "Soggy Bottomed",
+      "imgURL": "https://i.pinimg.com/originals/88/f7/80/88f7805f8c2154d6369adeab06ccc507.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Challah Back Cake",
+      "category": "Soggy Bottomed",
+      "imgURL": "https://smittenkitchendotcom.files.wordpress.com/2012/09/fig-olive-oil-and-sea-salt-challah1.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Sammy Cake",
+      "category": "Firm Bottomed",
+      "imgURL": "https://metro.co.uk/wp-content/uploads/2017/09/pri_51006449.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Meat Cake",
+      "category": "Firm Bottomed",
+      "imgURL": "https://imgix.bustle.com/uploads/image/2019/9/3/764861f4-1ce8-49de-a430-e6df4e430c66-170920_038_nanssundaypie_450.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Beatrice",
+      "category": "Soggy Bottomed",
+      "imgURL": "http://www.pbs.org/food/wp-content/blogs.dir/2/files/2016/11/chocolate-gateau.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Georgina The Tenticake",
+      "category": "Firm Bottomed",
+      "imgURL": "https://66.media.tumblr.com/b3df68483ec46d0c463fb57a4e64fd20/ac7580331c69a4f5-1c/s640x960/a12a850d20f579bb48621ec708bdffb28d4734da.jpg"
+    }
+  ]
+}
