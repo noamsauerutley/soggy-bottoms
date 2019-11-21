@@ -7,10 +7,12 @@ const CakeDisplay = (props) => {
       <br/>
       <h1>{ props.cake.name }</h1>
       <br/>
+      <div className='CakeFilter'>
       <select value={ props.cake.category } onChange={() => props.updateCake()}>
         <option value="Soggy Bottomed">Soggy Bottomed</option>
         <option value="Firm Bottomed">Firm Bottomed</option>
       </select>
+      </div>
     </div>
   )
 }
