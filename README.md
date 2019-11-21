@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app is your first step towards becoming the next judge on The Great British Baking Show. Your app should be able to:
 
-## Available Scripts
+List the names of your cakes in a CakeList
+When clicking on the 'Show' button below a cake, it should display more info about the cake in the CakeDisplay area
+More info includes the cake category and its image
+Selecting the dropdown filter should allow you to filter the CakeList by category
+BONUS: Changing the cake category on the CakeDisplay should persist the change to the backend
+BONUS: Clicking the Hide button should delete the cake from the list (this does not need to persist)
 
-In the project directory, you can run:
+STEP 1: VIEW THE DATA
+All of the cake data is stored in the db.json file. You'll want to access this data using a json server. In order to do this, run the following command:
 
-### `npm start`
+npm install -g json-server
+json-server --watch db.json
+npm start
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This will setup the data on a server using restful routes at http://localhost:3001/cakes.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Go to that url in your browser to view the data.
 
-### `npm test`
+STEP 2: ADD CAKES TO CAKELIST
+On page load, make a fetch to get all of the cake data. When you have this information, render the cake names to the CakeList.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+STEP 3: DISPLAY INFO ABOUT EACH CAKE ON CLICK
+When a user clicks on the 'Show' button below a cake in the CakeList, that cake's info (image, name, and category) should display in the CakeDisplay component.
 
-### `npm run build`
+The category should display as a dropdown, with the default value set to the category of the cake. (e.g. The dropdown of the Brexit Boris should have Soggy Bottomed as the default display value.)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+STEP 4: FILTER CAKES BY CATEGORY
+When a user changes the value of the select dropdown above the CakeList, the cakes displayed in the list should change accordingly:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+the 'All' option should display all cakes
+the 'Soggy Bottomed' option should display only Soggy Bottomed cakes
+the 'Firm Bottomed' option should display only Firm Bottomed cakes
+BONUS: CHANGE CAKE CATEGORY
+The cake category displays as a select dropdown in the CakeDisplay component. When a user changes the value of the dropdown, this change should persist.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For example, if a user changes the category of 'Autumn Wonder' from Firm Bottomed to Soggy Bottomed, then this change should still be reflected on the page upon refresh.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+BONUS 2: HIDE CAKES FROM THE LIST
+When a user clicks on the 'Hide' button of a cake on the CakeList, it should delete the cake's name from the list. This change does not need to persist to the backend.
