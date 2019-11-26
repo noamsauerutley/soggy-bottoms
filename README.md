@@ -1,9 +1,9 @@
-This app is your first step towards becoming the next judge on The Great British Baking Show. Your app should be able to:
+<!-- This app is your first step towards becoming the next judge on The Great British Baking Show. Your app should be able to:
 
-List the names of your cakes in a CakeList
-When clicking on the 'Show' button below a cake, it should display more info about the cake in the CakeDisplay area
-More info includes the cake category and its image
-Selecting the dropdown filter should allow you to filter the CakeList by category
+List the names of your cakes in a CakeList -->
+<!-- When clicking on the 'Show' button below a cake, it should display more info about the cake in the CakeDisplay area
+More info includes the cake category and its image -->
+<!-- Selecting the dropdown filter should allow you to filter the CakeList by category -->
 BONUS: Changing the cake category on the CakeDisplay should persist the change to the backend
 BONUS: Clicking the Hide button should delete the cake from the list (this does not need to persist)
 
